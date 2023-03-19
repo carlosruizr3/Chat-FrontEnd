@@ -1,0 +1,39 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>New Chat</ion-title>
+
+    <ion-button size="small" fill="clear" slot="end">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button size="small" fill="clear" slot="end">
+      <ion-icon name="sync-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="flex_div">
+      <img src="assets/imgs/group1.png" alt="">
+      <div class="user_detail">
+        <ion-label class="bold_lbl">Chat Nuevo</ion-label>
+      </div>
+    </div>
+
+    <ion-label class="head_lbl">Mis contactos</ion-label>
+
+    <div class="flex_div" *ngFor="let item of users">
+      <div class="user_back bg_image" [style.backgroundImage]="'url( '+ item.user +' )'"></div>
+      <div class="user_detail">
+        <ion-label class="bold_lbl">{{item.username}}</ion-label>
+        <ion-label class="gray_lbl">@jonh1233</ion-label>
+      </div>
+    </div>
+  </div>
+</ion-content>

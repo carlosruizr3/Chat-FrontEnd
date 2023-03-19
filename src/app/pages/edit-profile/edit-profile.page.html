@@ -1,0 +1,74 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="user_back bg_image" [style.backgroundImage]="'url(assets/imgs/users/user20.jpg)'"></div>
+    <ion-button expand="block" fill="clear" style="font-size: 15px;">
+      CHANGE PROFILE PICTURE
+    </ion-button>
+
+    <div class="form_div">
+      <ion-item>
+        <ion-label position="floating">Full Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Username/Hello ID</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Birth Date</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Bio</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </div>
+
+    <div class="gray_div">
+      <ion-label>PRIVATE INFORMATON</ion-label>
+    </div>
+
+    <div class="form_div">
+      <ion-item>
+        <ion-label position="floating">Email ID</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item style="position: relative;">
+        <span class="change">Change Number</span>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <div class="gender_div">
+        <div class="f_div">
+          <ion-label>Gender</ion-label>
+        </div>
+
+        <ion-radio-group mode="md">
+          <div class="s_div">
+            <div style="display: flex;">
+              <ion-label>Male</ion-label>
+              <ion-radio value="Male"></ion-radio>
+            </div>
+            <div style="display: flex;">
+              <ion-label>Female</ion-label>
+              <ion-radio value="Female"></ion-radio>
+            </div>
+          </div>
+        </ion-radio-group>
+
+      </div>
+    </div>
+
+  </div>
+</ion-content>

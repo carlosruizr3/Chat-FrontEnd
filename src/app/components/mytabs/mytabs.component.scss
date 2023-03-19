@@ -1,0 +1,24 @@
+.custom_comp{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 99999;
+    .white_tab{
+        width: 200px;
+        border-radius: 22px;
+        height: 50px;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
+
+        img{
+            width: 20px;
+        }
+    }
+}

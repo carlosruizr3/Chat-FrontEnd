@@ -1,0 +1,92 @@
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-3.jpg');">
+			<div class="inner">
+				<form method="POST" [formGroup]="formW">
+					<h3>Crear una cuenta</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Nombre:</label>
+							<div class="form-holder">
+								<i class="zmdi zmdi-account-o"></i>
+								<input type="text" class="form-control" id="inputNombre" formControlName="nombre">
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Primer Apellido:</label>
+							<div class="form-wrapper">
+								<i class="zmdi zmdi-account-o"></i>
+								<input type="text" class="form-control" id="inputApellido_p" formControlName="apellido_p">
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Segundo Apellido:</label>
+							<div class="form-wrapper">
+								<i class="zmdi zmdi-account-o"></i>
+								<input type="text" class="form-control" id="inputApellido_m" formControlName="apellido_m">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Password:</label>
+							<div class="form-holder">
+								<i class="zmdi zmdi-lock-outline"></i>
+								<input type="password" class="form-control" placeholder="********" id="inputPass" formControlName="pass">
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Email:</label>
+							<div class="form-holder">
+								<i style="font-style: normal; font-size: 15px;">@</i>
+								<input type="text" class="form-control" id="inputCorreo" formControlName="correo">
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">foto:</label>
+							<div class="form-holder">
+								<i class="zmdi zmdi-account-o"></i>
+								<input type="text" class="form-control" id="inputFoto" formControlName="foto">
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Country:</label>
+							<div class="form-holder select">
+								<select name="" id="" class="form-control">
+									<option value="united states">United States</option>
+									<option value="united kingdom">United Kingdom</option>
+									<option value="viet nam">Viet Nam</option>
+								</select>
+								<i class="zmdi zmdi-pin"></i>
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Gender:</label>
+							<div class="form-holder select">
+								<select name="" id="" class="form-control">
+									<option value="male">Male</option>
+									<option value="femal">Female</option>
+									<option value="other">Other</option>
+								</select>
+								<i class="zmdi zmdi-face"></i>
+							</div>
+						</div>
+					</div>-->
+					<div class="form-end">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Acepto los terminos y condiones
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="button-holder">
+							<button (click)="createUser()">Registrarme</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
