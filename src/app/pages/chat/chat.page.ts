@@ -57,6 +57,11 @@ export class ChatPage implements OnInit {
   ) {
     this.getChatId()
 
+    socket.on('new-message', (data) => {
+      console.log('Mensaje recibido:', data);
+      this.getChatId();
+    });
+
     /*
     socket.on('new-message', (data) => {
       this.route.paramMap.subscribe((paramMap: ParamMap) => {
@@ -97,10 +102,8 @@ export class ChatPage implements OnInit {
   }
 
   async sendMessage(){
-    
     const query = await this.SocketService.findChat(
      this.id_usuario_env, this.receiver).toPromise();
-     
       this.cid = query.cid;
       const message={
         id_conversacion:  query.id_conversacion,

@@ -32,9 +32,8 @@
         <div class="card_div" *ngFor="let item of users" (click)="goToChats(item.user_id)">
         <img class="user_back bg_image" src="../../../assets/imgs/perfil.jpg"/>
         <div class="user_detail">
-          <ion-label class="username">{{item.nombre}} {{item.apellido_p}}</ion-label>
-          <ion-label class="msg">Hello !</ion-label>
-          <ion-label class="msg">Hello2 !</ion-label>
+          <ion-label class="username">{{item.nombre}}</ion-label>
+          <ion-label class="msg">{{item.apellido_p}}</ion-label>
           <div class="container-login100-form-btn">
 						<!--<ion-button color="success" (click)="goToHome()">Iniciar Sesión</ion-button>-->
 					</div>
